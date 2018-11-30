@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+      
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+      
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>Hack Week Chat</title>
+  </head>
+
+  <body>
+
+      <div class="container">
+          <header>
+              <h1>Hack Week Chat</h1>
+          </header>      
+          <div id="change_username">
+              <input id="username" type="text" />
+              <button id="send_username" type="button" class="btn-primary btn-sm">Change username</button>
+          </div>
+
+          <div id="chatroom">
+              <div id="feedback"></div>
+          </div>
+
+          <div id="input_zone"> 
+              <input id="message" class="vertical-align" type="text" />
+              <button id="send_message" class="btn-primary btn-sm" type="button">Send</button>
+          </div>
+      </div>  
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
